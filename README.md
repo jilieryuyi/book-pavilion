@@ -2,7 +2,7 @@
 
 ![微信二维码](resources/wechat.png)
 
-# 中医书库 · GitHub Pages 静态站
+# 岐黄书库 · GitHub Pages 静态站
 
 一个用 **GitHub Pages + Jekyll** 搭起来的中医古籍目录站。纯 Markdown、无后端、无数据库，仓库一提交，GitHub 自动构建成网页。
 

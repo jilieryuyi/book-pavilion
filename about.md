@@ -5,6 +5,11 @@ permalink: /about.html
 tags: ["说明"]
 ---
 
+> 扫码找书
+
+![微信二维码]({{ '/resources/wechat.png' | relative_url }})
+
+
 # 关于本站
 
 这是一个用 **GitHub Pages + Jekyll** 搭起来的静态书库站，没有任何后端、没有数据库，全部内容都是 Markdown 文件，仓库一提交，GitHub 自动构建成网页。
