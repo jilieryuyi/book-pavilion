@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="book">
+  <p class="crumb"><a href="{{ '/' | relative_url }}">← 返回目录</a></p>
+
+  <header class="book-head">
+    <h1>{{ page.title | default: "未命名" }}</h1>
+    <div class="book-meta">
+      {% if page.date %}<span>{{ page.date | date: "%Y-%m-%d" }}</span>{% endif %}
+      {% if page.tags %}<span class="tags">{% for t in page.tags %}<i>{{ t }}</i>{% endfor %}</span>{% endif %}
+    </div>
+  </header>
+
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,58 @@
+# ---------- 基本信息 ----------
+title: 闲鱼书库
+tagline: 285 个中医古籍与临床丛书目录
+description: 中医古籍、名家医案、临床丛书的整理与索引，按目录浏览，逐本查阅。
+author: 黄熙媛
+lang: zh-CN
+timezone: Asia/Shanghai
+
+# ---------- 地址 ----------
+# 当前仓库是 项目站点（仓库名 tcm-books.github.io，与账号 jilieryuyi 不同名）
+url: "https://jilieryuyi.github.io"
+baseurl: "/"
+
+# 如果以后改名为 jilieryuyi.github.io（用户站点），把 baseurl 改成 ""
+# 如果绑定自定义域名，url 填域名，baseurl 同样改成 ""
+
+# ---------- 构建设置 ----------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+encoding: utf-8
+future: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+# ---------- 页面默认值 ----------
+# 285 本书的 .blog.md 都已自带 front matter（title/date/tags），
+# 这里统一给它们套上 book 布局，不用逐个改文件。
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: book
+
+# ---------- 排除不参与构建的内容 ----------
+exclude:
+  - .git
+  - .github
+  - _site
+  - .jekyll-cache
+  - node_modules
+  - vendor
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - 闲鱼书库_blog合集.zip
+  - "*.zip"
+
+# ---------- 输出 ----------
+keep_files:
+  - .git
