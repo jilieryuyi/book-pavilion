@@ -39,11 +39,22 @@ a:hover { text-decoration: underline; }
 .site-nav a:hover { color: var(--accent); }
 
 /* hero */
-.hero { padding: 48px 0 20px; }
+.hero { display: flex; align-items: flex-start; justify-content: space-between; gap: 36px; padding: 48px 0 20px; }
+.hero-main { flex: 1 1 auto; min-width: 0; }
 .hero h1 { font-size: 32px; margin: 0 0 12px; letter-spacing: .08em; }
 .hero p { margin: 0 0 18px; color: var(--ink-soft); max-width: 640px; }
 .stats { display: flex; flex-wrap: wrap; gap: 22px; font-size: 14px; color: var(--ink-soft); }
 .stats strong { color: var(--accent); font-size: 20px; margin-right: 4px; }
+
+/* 扫码找书 */
+.qr {
+  flex: 0 0 auto; width: 176px; padding: 14px 12px 12px; text-align: center;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(138,59,46,.06);
+}
+.qr-title { font-size: 15px; letter-spacing: .1em; color: var(--accent); margin: 0 0 10px; }
+.qr img { display: block; width: 132px; height: 132px; margin: 0 auto 8px; border-radius: 6px; }
+.qr-note { font-size: 11px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
 
 /* toolbar */
 .toolbar { display: flex; align-items: center; gap: 14px; margin: 8px 0 24px; }
@@ -94,8 +105,9 @@ a:hover { text-decoration: underline; }
 .site-footer .muted { font-size: 12px; }
 
 @media (max-width: 560px) {
-  .hero { padding-top: 32px; }
+  .hero { flex-direction: column; padding-top: 32px; gap: 24px; }
   .hero h1 { font-size: 26px; }
+  .qr { width: 100%; }
   .site-header .wrap { flex-direction: column; align-items: flex-start; }
   .book-head h1 { font-size: 24px; }
   .cards { grid-template-columns: 1fr; }

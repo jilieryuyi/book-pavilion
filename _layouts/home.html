@@ -2,15 +2,23 @@
 layout: default
 ---
 <section class="hero">
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
-  <div class="stats">
-    <span><strong>{{ site.data.books.size }}</strong> 个目录</span>
-    {% assign t = 0 %}{% for b in site.data.books %}{% assign t = t | plus: b.kinds %}{% endfor %}
-    <span><strong>{{ t }}</strong> 个品种</span>
-    {% assign f = 0 %}{% for b in site.data.books %}{% assign f = f | plus: b.files %}{% endfor %}
-    <span><strong>{{ f }}</strong> 个文件</span>
+  <div class="hero-main">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+    <div class="stats">
+      <span><strong>{{ site.data.books.size }}</strong> 个目录</span>
+      {% assign t = 0 %}{% for b in site.data.books %}{% assign t = t | plus: b.kinds %}{% endfor %}
+      <span><strong>{{ t }}</strong> 个品种</span>
+      {% assign f = 0 %}{% for b in site.data.books %}{% assign f = f | plus: b.files %}{% endfor %}
+      <span><strong>{{ f }}</strong> 个文件</span>
+    </div>
   </div>
+
+  <aside class="qr">
+    <p class="qr-title">扫码找书</p>
+    <img src="{{ '/resources/wechat.png' | relative_url }}" alt="微信二维码" width="132" height="132">
+    <p class="qr-note">微信扫一扫 · 长按识别</p>
+  </aside>
 </section>
 
 <div class="toolbar">
