@@ -1,6 +1,31 @@
-# 书库 · GitHub Pages 静态站
+> 扫码找书
 
-Jekyll 站点，GitHub 自动构建，无需本地装 Ruby。
+![微信二维码](resources/wechat.png)
+
+# 中医书库 · GitHub Pages 静态站
+
+一个用 **GitHub Pages + Jekyll** 搭起来的中医古籍目录站。纯 Markdown、无后端、无数据库，仓库一提交，GitHub 自动构建成网页。
+
+## 内容概览
+
+当前收录 **285 个目录、8550 个品种、14086 个文件**（按目录整理，不做全文检索，只做版本索引与对照查阅）。
+
+按内容大致分为六类：
+
+- **经典注本**：`金匮要略`（809 种 / 1756 个文件）、`伤寒论`（440 / 518）、`黄帝内经`相关、`桂林古本伤寒杂病论`、`二续名医类案` —— 历代注家、校注、白话解、讲义、习题成体系收在一起
+- **古籍丛书与珍本**：`中国古医籍整理丛书`（430 / 491）、`中医古籍珍本集成`（205 / 245）、`珍本医籍丛刊`、`珍版海外回归中医古籍丛书`、`中国医学大成`、`圣济总录`、`普济方`
+- **名家医案医话**：秦伯未、叶天士、蒲辅周、岳美中、朱良春、周仲瑛、邓铁涛等医家的医案医话，以及`古今名医临证金鉴`、`中国百年百名中医临床家丛书`这类合集
+- **针灸推拿**：杨继洲、贺普仁、石学敏、承淡安、王乐亭、`北京针灸名家丛书`、`五行针灸的治疗模式`
+- **本草方剂**：李时珍、唐慎微、`中国本草全书`、`辅行诀`、`汤液经法图讲记`、`十万金方`、`名医奇方秘术`
+- **教材讲义与海外汉方**：高等医药院校/函授教材、`中医学解难`、`中医基础课程笔记图解`；日本汉方一侧有大塚敬节、矢数道明、代田文志针灸
+
+## 关键词
+
+`中医` `古籍` `中医古籍` `善本` `珍本` `丛书` `影印本` `校注本` `白话解`
+`伤寒论` `金匮要略` `黄帝内经` `温病` `经方` `六经辨证` `方证相应`
+`医案` `医话` `临证经验` `名老中医` `国医大师` `医派` `师承`
+`针灸` `经络` `本草` `方剂` `舌诊` `脉诊` `养生`
+`日本汉方` `汉方医学`
 
 ## 目录结构
 
@@ -10,6 +35,7 @@ D:\blog
 ├── _data\books.json     首页索引数据（285 个目录，脚本生成）
 ├── _layouts\            模板：default（框架）、home（首页）、book（文章页）
 ├── assets\css\style.css 全站样式
+├── resources\wechat.png 联系二维码
 ├── index.md             首页（目录卡片 + 搜索）
 ├── catalog.md           总表（285 行完整清单，带跳转链接）
 ├── about.md             关于
@@ -20,13 +46,13 @@ D:\blog
 
 ## 发布步骤
 
-1. 仓库 `jilieryuyi/tcm-books.github.io` → Settings → Pages
+1. 仓库 `jilieryuyi/book-pavilion` → Settings → Pages
 2. Source 选 **Deploy from a branch**，Branch 选 `master`，目录 `/ (root)`，Save
 3. 推送代码后等 1–3 分钟，访问：
-   `https://jilieryuyi.github.io/tcm-books.github.io/`
+   `https://jilieryuyi.github.io/book-pavilion/`
 
-> 因为仓库名不等于 `jilieryuyi.github.io`，属于**项目站点**，所以 `_config.yml` 里
-> `baseurl: "/tcm-books.github.io"`。如果把仓库改名成 `jilieryuyi.github.io`，
+> 因为仓库名 `book-pavilion` 不等于 `jilieryuyi.github.io`，属于**项目站点**，所以 `_config.yml` 里
+> `baseurl: "/book-pavilion"`。如果把仓库改名成 `jilieryuyi.github.io`，
 > 把 baseurl 改成 `""` 即可变成用户站点，直接 `https://jilieryuyi.github.io/` 访问。
 
 ## 新增一类书
@@ -36,7 +62,7 @@ D:\blog
 ```yaml
 ---
 title: "新书名"
-date: 2026-11-26
+date: 2026-11-27
 tags: ["中医", "古籍"]
 ---
 ```
@@ -48,3 +74,7 @@ tags: ["中医", "古籍"]
 
 `_data\books.json` 由脚本扫描各目录的 `.blog.md` 生成，字段：
 `title` / `dir` / `url` / `kinds`（品种数）/ `files`（文件数）/ `desc`（简介前 90 字）。
+
+## 说明
+
+本站只做目录整理与版本索引，不提供书籍下载，内容用于查阅、对照与学习。

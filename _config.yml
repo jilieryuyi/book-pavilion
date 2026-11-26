@@ -1,5 +1,5 @@
 # ---------- 基本信息 ----------
-title: 闲鱼书库
+title: 中医书库
 tagline: 285 个中医古籍与临床丛书目录
 description: 中医古籍、名家医案、临床丛书的整理与索引，按目录浏览，逐本查阅。
 author: 黄熙媛
@@ -7,11 +7,12 @@ lang: zh-CN
 timezone: Asia/Shanghai
 
 # ---------- 地址 ----------
-# 当前仓库是 项目站点（仓库名 tcm-books.github.io，与账号 jilieryuyi 不同名）
+# 仓库：jilieryuyi/book-pavilion，属于项目站点（仓库名 ≠ jilieryuyi.github.io）
+# 访问地址：https://jilieryuyi.github.io/book-pavilion/
 url: "https://jilieryuyi.github.io"
-baseurl: "/"
+baseurl: "/book-pavilion"
 
-# 如果以后改名为 jilieryuyi.github.io（用户站点），把 baseurl 改成 ""
+# 如果以后把仓库改名为 jilieryuyi.github.io（用户站点），把 baseurl 改成 ""
 # 如果绑定自定义域名，url 填域名，baseurl 同样改成 ""
 
 # ---------- 构建设置 ----------
@@ -50,7 +51,6 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - 闲鱼书库_blog合集.zip
   - "*.zip"
 
 # ---------- 输出 ----------
