@@ -5,8 +5,6 @@ tags: ["书籍", "索引"]
 permalink: /catalog.html
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 

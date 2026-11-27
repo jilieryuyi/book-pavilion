@@ -5,8 +5,6 @@ permalink: /about.html
 tags: ["说明"]
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 

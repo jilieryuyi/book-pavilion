@@ -4,14 +4,12 @@ date: 2026-11-27
 tags: ["书籍", "古籍"]
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 
 # 古籍 · 第 13 部分
 
-返回 [总目录](古籍/古籍.blog.html)
+返回 [总目录](古籍.blog.html)
 
 ---
 

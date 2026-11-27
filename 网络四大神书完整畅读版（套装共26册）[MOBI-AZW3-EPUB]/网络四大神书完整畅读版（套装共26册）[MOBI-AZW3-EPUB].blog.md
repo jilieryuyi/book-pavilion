@@ -4,8 +4,6 @@ date: 2026-11-27
 tags: ["书籍", "网络四大神书完整畅读版（套装共26册）[MOBI-AZW3-EPUB]"]
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 

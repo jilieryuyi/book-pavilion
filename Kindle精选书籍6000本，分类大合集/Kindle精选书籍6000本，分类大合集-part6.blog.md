@@ -4,14 +4,12 @@ date: 2026-11-27
 tags: ["书籍", "Kindle精选书籍6000本，分类大合集"]
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 
 # Kindle精选书籍6000本，分类大合集 · 第 6 部分
 
-返回 [总目录](Kindle精选书籍6000本，分类大合集/Kindle精选书籍6000本，分类大合集.blog.html)
+返回 [总目录](Kindle精选书籍6000本，分类大合集.blog.html)
 
 ---
 

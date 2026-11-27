@@ -4,8 +4,6 @@ date: 2026-11-27
 tags: ["书籍", "【电子书】精英思维与沟通课程（五册套装 得到APP每日听书书单）"]
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 

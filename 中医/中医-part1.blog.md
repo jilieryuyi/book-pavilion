@@ -4,14 +4,12 @@ date: 2026-11-27
 tags: ["书籍", "中医"]
 ---
 
-> 扫码找书
-
 ![微信二维码]({{ '/resources/wechat.png' | relative_url }})
 
 
 # 中医 · 第 1 部分
 
-返回 [总目录](中医/中医.blog.html)
+返回 [总目录](中医.blog.html)
 
 ---
 

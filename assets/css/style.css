@@ -116,7 +116,6 @@ a:hover { text-decoration: underline; }
 .site-footer .muted { font-size: 12px; }
 
 /* 文章页「扫码找书」→ 右上角悬浮卡片 */
-.prose > blockquote:has(+ p:has(> img[src*="wechat.png"])) { display: none; }
 .prose > p:has(> img[src*="wechat.png"]) {
   position: fixed; top: 24px; right: 24px; z-index: 40;
   margin: 0; padding: 27px 12px 12px; width: 134px;
