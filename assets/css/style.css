@@ -115,6 +115,28 @@ a:hover { text-decoration: underline; }
 .site-footer p { margin: 0 0 4px; font-size: 13px; color: var(--ink-soft); }
 .site-footer .muted { font-size: 12px; }
 
+/* 文章页「扫码找书」→ 右上角悬浮卡片 */
+.prose > blockquote:has(+ p:has(> img[src*="wechat.png"])) { display: none; }
+.prose > p:has(> img[src*="wechat.png"]) {
+  position: fixed; top: 24px; right: 24px; z-index: 40;
+  margin: 0; padding: 27px 12px 12px; width: 134px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(138,59,46,.12); text-align: center;
+}
+.prose > p:has(> img[src*="wechat.png"])::before {
+  content: "扫码找书"; position: absolute; top: 7px; left: 0; right: 0;
+  font-size: 12px; letter-spacing: .12em; color: var(--accent);
+}
+.prose > p:has(> img[src*="wechat.png"]) img {
+  display: block; width: 108px; height: 108px; margin: 0 auto; border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+  .prose > p:has(> img[src*="wechat.png"]) {
+    position: static; width: auto; max-width: 210px; margin: 0 0 24px; padding: 25px 12px 12px;
+  }
+}
+
 @media (max-width: 560px) {
   .hero { flex-direction: column; padding-top: 32px; gap: 24px; }
   .hero h1 { font-size: 26px; }
