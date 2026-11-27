@@ -4,7 +4,7 @@ date: 2026-11-27
 tags: ["书籍", "中医"]
 ---
 
-![微信二维码]({{ '/resources/wechat.png' | relative_url }})
+<div class="qr-float">{% include qr.html %}</div>
 
 
 # 中医 · 第 7 部分

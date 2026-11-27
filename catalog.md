@@ -5,12 +5,13 @@ tags: ["书籍", "索引"]
 permalink: /catalog.html
 ---
 
-![微信二维码]({{ '/resources/wechat.png' | relative_url }})
-
-
-# 岐黄书库总目录
-
-共 426 个目录，按文件数排序。
+<section class="hero">
+  <div class="hero-main">
+    <h1>岐黄书库总目录</h1>
+    <p>共 426 个目录，按文件数排序。</p>
+  </div>
+  {% include qr.html %}
+</section>
 
 | 目录 | 品种 | 文件 |
 |---|---|---|

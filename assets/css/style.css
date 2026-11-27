@@ -46,7 +46,7 @@ a:hover { text-decoration: underline; }
 .stats { display: flex; flex-wrap: wrap; gap: 22px; font-size: 14px; color: var(--ink-soft); }
 .stats strong { color: var(--accent); font-size: 20px; margin-right: 4px; }
 
-/* 扫码找书（+v，备注：找书，找什么书） */
+/* 二维码卡片：文案与结构统一在 _includes/qr.html，各页共用此样式 */
 .qr {
   flex: 0 0 auto; width: 176px; padding: 14px 12px 12px; text-align: center;
   background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
@@ -55,6 +55,7 @@ a:hover { text-decoration: underline; }
 .qr-title { font-size: 15px; letter-spacing: .1em; color: var(--accent); margin: 0 0 10px; }
 .qr img { display: block; width: 132px; height: 132px; margin: 0 auto 8px; border-radius: 6px; }
 .qr-note { font-size: 11px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+
 
 /* 文章页底部的扫码条 */
 .qr-inline {
@@ -115,29 +116,13 @@ a:hover { text-decoration: underline; }
 .site-footer p { margin: 0 0 4px; font-size: 13px; color: var(--ink-soft); }
 .site-footer .muted { font-size: 12px; }
 
-/* 文章页「扫码找书（+v，备注：找书，找什么书）」→ 右上角悬浮卡片（样式与首页 .qr 卡片保持一致） */
-.prose > p:has(> img[src*="wechat.png"]) {
-  position: fixed; top: 101.25px; right: 24px; z-index: 40;
-  margin: 0; padding: 14px 12px 12px; width: 176px;
-  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
-  box-shadow: 0 8px 24px rgba(138,59,46,.12); text-align: center;
-}
-.prose > p:has(> img[src*="wechat.png"])::before {
-  content: "扫码找书（+v，备注：找书，找什么书）"; display: block;
-  font-size: 15px; letter-spacing: .1em; line-height: 1.4; color: var(--accent); margin: 0 0 10px;
-}
-.prose > p:has(> img[src*="wechat.png"]) img {
-  display: block; width: 132px; height: 132px; margin: 0 auto 8px; border-radius: 6px;
-}
-.prose > p:has(> img[src*="wechat.png"])::after {
-  content: "微信扫一扫 · 长按识别"; display: block;
-  font-size: 11px; color: var(--ink-soft); margin: 0; line-height: 1.5;
-}
+/* 文章页二维码卡片：与首页 .qr 完全同源（_includes/qr.html），置于内容右上角并随内容排列 */
+.qr-float { float: right; margin: 0 0 20px 24px; }
+.prose .qr-float .qr-title { margin: 0 0 10px; }
+.prose .qr-float .qr-note { margin: 0; }
 
 @media (max-width: 900px) {
-  .prose > p:has(> img[src*="wechat.png"]) {
-    position: static; width: auto; max-width: 176px; margin: 0 0 24px; padding: 14px 12px 12px;
-  }
+  .qr-float { float: none; margin: 0 0 24px auto; }
 }
 
 @media (max-width: 560px) {

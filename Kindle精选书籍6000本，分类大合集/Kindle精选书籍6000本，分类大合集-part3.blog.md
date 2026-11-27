@@ -4,7 +4,7 @@ date: 2026-11-27
 tags: ["书籍", "Kindle精选书籍6000本，分类大合集"]
 ---
 
-![微信二维码]({{ '/resources/wechat.png' | relative_url }})
+<div class="qr-float">{% include qr.html %}</div>
 
 
 # Kindle精选书籍6000本，分类大合集 · 第 3 部分

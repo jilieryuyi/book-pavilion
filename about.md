@@ -5,7 +5,7 @@ permalink: /about.html
 tags: ["说明"]
 ---
 
-![微信二维码]({{ '/resources/wechat.png' | relative_url }})
+<div class="qr-float">{% include qr.html %}</div>
 
 
 # 关于本站
